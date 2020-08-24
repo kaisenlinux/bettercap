@@ -1,0 +1,32 @@
+Source: bettercap
+Section: net
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper,
+	       ca-certificates,
+	       dh-golang,
+	       golang-go,
+	       libpcap-dev,
+	       libnetfilter-queue-dev,
+	       libusb-1.0-0-dev,
+	       procps,
+	       iproute2,
+Standards-Version: 4.5.0
+Homepage: https://www.bettercap.org
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/bettercap.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/bettercap
+
+Package: bettercap
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+	 libpcap0.8,
+	 libusb-1.0-0,
+	 libnetfilter-queue1,
+Recommends: bettercap-caplets
+Suggests: bettercap-ui
+Replaces: kaisen-bettercap
+Built-Using: ${misc:Built-Using}
+Description: Complete, modular, portable and easily extensible MITM framework
+ This package contains a Swiss Army knife for 802.11, BLE and Ethernet networks
+ reconnaissance and attacks.

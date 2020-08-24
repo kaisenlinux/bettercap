@@ -1,0 +1,13 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+
+--- bettercap-2.28.orig/bettercap.service
++++ bettercap-2.28/bettercap.service
+@@ -7,7 +7,7 @@ After=network.target
+ [Service]
+ Type=simple
+ PermissionsStartOnly=true
+-ExecStart=/usr/local/bin/bettercap -no-colors -eval "set events.stream.output /var/log/bettercap.log; api.rest on"
++ExecStart=/usr/bin/bettercap -no-colors -eval "set events.stream.output /var/log/bettercap.log; api.rest on"
+ Restart=always
+ RestartSec=30
+ 
