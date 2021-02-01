@@ -15,5 +15,3 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 	go test ./...
-
-override_dh_dwz:

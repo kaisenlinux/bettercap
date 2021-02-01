@@ -20,6 +20,7 @@ Package: bettercap
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+	 ${misc:Built-Using},
 	 libpcap0.8,
 	 libusb-1.0-0,
 	 libnetfilter-queue1,
