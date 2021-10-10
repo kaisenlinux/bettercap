@@ -8,10 +8,13 @@ export GOPATH=$(CURDIR)/vendor
 
 override_dh_auto_build:
 	go get -d
-	go install ./...
+	go build -mod=mod
 
 override_dh_auto_install:
 	dh_auto_install -- --no-source
 
 override_dh_auto_test:
-	go test ./...
+	go test ./... -mod=mod
+
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --no-start

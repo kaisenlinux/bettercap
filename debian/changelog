@@ -1,3 +1,9 @@
+bettercap (2.32.0-1kaisen) kaisen-packages; urgency=medium
+
+  * Update at 2.32.0
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 09 Oct 2021 14:10:11 +0200
+
 bettercap (2.31.1-1kaisen) kaisen-packages; urgency=medium
 
   * Update at 2.31.1
