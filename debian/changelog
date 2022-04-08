@@ -1,3 +1,9 @@
+bettercap (2.32.0-2kaisen) kaisen-packages; urgency=medium
+
+  * Update to remove bettercap update provide of Debian
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 08 Apr 2022 15:15:46 +0100
+
 bettercap (2.32.0-1kaisen) kaisen-packages; urgency=medium
 
   * Update at 2.32.0
