@@ -7,7 +7,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  Type=simple
  PermissionsStartOnly=true
 -ExecStart=/usr/local/bin/bettercap -no-colors -eval "set events.stream.output /var/log/bettercap.log; api.rest on"
-+ExecStart=/usr/bin/bettercap -no-colors -eval "set events.stream.output /var/log/bettercap.log; api.rest on"
++ExecStart=/usr/sbin/bettercap -no-colors -eval "set events.stream.output /var/log/bettercap.log; api.rest on"
  Restart=always
  RestartSec=30
  

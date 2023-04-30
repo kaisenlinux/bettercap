@@ -1,3 +1,9 @@
+bettercap (2.32.0-3kaisen) kaisen-packages; urgency=medium
+
+  * Update the systemd service
+
+ -- Mehdi Lecomte - Labrute! <labrute@kaisenlinux.org>  Sun, 30 Apr 2023 17:42:08 +0100
+
 bettercap (2.32.0-2kaisen) kaisen-packages; urgency=medium
 
   * Update to remove bettercap update provide of Debian
