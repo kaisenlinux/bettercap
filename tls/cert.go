@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bettercap/bettercap/session"
+	"github.com/bettercap/bettercap/v2/session"
 )
 
 type CertConfig struct {
@@ -39,6 +39,14 @@ var (
 		Organization:       "GoDaddy.com, Inc.",
 		OrganizationalUnit: "https://certs.godaddy.com/repository/",
 		CommonName:         "Go Daddy Secure Certificate Authority - G2",
+	}
+	DefaultCloudflareDNSConfig = CertConfig{
+		Bits:               4096,
+		Country:            "US",
+		Locality:           "San Francisco",
+		Organization:       "Cloudflare, Inc.",
+		OrganizationalUnit: "",
+		CommonName:         "cloudflare-dns.com",
 	}
 )
 

@@ -4,10 +4,13 @@ export GOCACHE=$(CURDIR)/vendor
 export GOPATH=$(CURDIR)/vendor
 
 %:
-	dh $@ --buildsystem=golang
+	dh $@ --buildsystem=golang --builddirectory=_build
+
+override_dh_auto_clean:
+	dh_clean
+	rm -rf $(CURDIR)/_build
 
 override_dh_auto_build:
-	go get -d
 	go build -mod=mod
 
 override_dh_dwz:

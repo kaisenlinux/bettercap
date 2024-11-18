@@ -5,7 +5,7 @@ Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Build-Depends: debhelper,
 	       ca-certificates,
 	       dh-golang,
-	       golang-go,
+	       golang-go (>= 1.22.6),
 	       libpcap-dev,
 	       libnetfilter-queue-dev,
 	       libusb-1.0-0-dev,
